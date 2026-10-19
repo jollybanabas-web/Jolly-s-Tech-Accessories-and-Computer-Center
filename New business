@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta SEO Tags for Kyotera & Uganda Search Engines -->
+    <title>Jolly's Tech Accessories & Computer Center | Kyotera, Uganda</title>
+    <meta name="description" content="Dealers in Phones, Smart TVs, Laptops, Mobile & Computer Accessories, and General Electronics in Kyotera Town, Uganda. Fast repairs and local business advertising.">
+    <meta name="keywords" content="Jolly's Tech Kyotera, phones in Kyotera, buy TVs Kyotera, computer repairs Kyotera, phone accessories Uganda, electronics store Kyotera">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="Jolly's Tech Accessories and Computer Center - Kyotera">
+    <meta property="og:description" content="Dealers in Phones, TVs, Computer Accessories & All Electronics in Kyotera, Uganda. Shop online or visit our store.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        jolly: {
+                            navy: '#0B132B',
+                            darkBlue: '#1C2541',
+                            blue: '#3A506B',
+                            cyan: '#00B4D8',
+                            amber: '#F59E0B',
+                            accent: '#06D6A0',
+                            lightBg: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data for Search Engines (Schema.org JSON-LD for Kyotera Business) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://jollybanabas@gmail.com",
+      "@type": "ElectronicsStore",
+      "name": "Jolly's Tech Accessories and Computer Center",
+      "image": "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&w=800&q=80",
+      "telephone": "+256745523253",
+      "email": "info@jollybanabas6@gmail.com",
+      "priceRange": "UGX",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Main Street, Next to Kyotera Central Market",
+        "addressLocality": "Kyotera",
+        "addressRegion": "Greater Masaka",
+        "addressCountry": "UG"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      }
+    }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B132B;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3A506B;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00B4D8;
+        }
+        .cyan-glow {
+            box-shadow: 0 0 20px rgba(0, 180, 216, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-jolly-cyan selection:text-jolly-navy">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-jolly-navy text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="container mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2 mx-auto sm:mx-0">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="font-semibold text-white">Jolly's Tech - Kyotera Town Branch</span>
+                <span class="hidden sm:inline text-slate-400">| Dealers in Phones, TVs, Laptops & Accessories</span>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-xs text-slate-300">
+                <span><i class="fa-solid fa-phone text-jolly-cyan mr-1"></i> +256 745 523253</span>
+                <span><i class="fa-solid fa-location-dot text-jolly-cyan mr-1"></i> Kyotera Main Street, Uganda</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-jolly-darkBlue/95 backdrop-blur-md border-b border-slate-800 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between gap-4">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-jolly-cyan to-blue-600 flex items-center justify-center text-white font-extrabold text-xl shadow-md group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-bolt text-amber-300"></i>
+                </div>
+                <div>
+                    <h1 class="text-base sm:text-lg font-extrabold text-white leading-none tracking-tight">
+                        Jolly's <span class="text-jolly-cyan">Tech</span>
+                    </h1>
+                    <p class="text-[10px] text-slate-400 font-medium mt-0.5">Kyotera Accessories & Computer Center</p>
+                </div>
+            </a>
+
+            <!-- Search Bar (Desktop) -->
+            <div class="hidden md:flex flex-1 max-w-md relative">
+                <input type="text" id="desktopSearchInput" onkeyup="handleSearch(this.value)" placeholder="Search Phones, Smart TVs, Laptops, Accessories..." 
+                       class="w-full bg-slate-800 border border-slate-700 text-xs rounded-full py-2.5 pl-10 pr-4 text-white focus:outline-none focus:border-jolly-cyan transition-all">
+                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400 text-xs"></i>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-6 font-medium text-xs text-slate-300">
+                <a href="#store" class="hover:text-jolly-cyan transition-colors">Shop Products</a>
+                <a href="#advertising" class="hover:text-amber-400 transition-colors flex items-center gap-1 text-amber-300 font-semibold">
+                    <i class="fa-solid fa-bullhorn text-amber-400"></i> Business Ads
+                </a>
+                <a href="#repairs" class="hover:text-jolly-cyan transition-colors">Repairs & Tech</a>
+                <a href="#about" class="hover:text-jolly-cyan transition-colors">About Us</a>
+                <a href="#location" class="hover:text-jolly-cyan transition-colors">Kyotera Location</a>
+            </nav>
+
+            <!-- Action Buttons & Cart Toggle -->
+            <div class="flex items-center gap-3">
+                <button onclick="toggleCartDrawer()" class="relative p-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-full transition-colors flex items-center justify-center border border-slate-700">
+                    <i class="fa-solid fa-cart-shopping text-base"></i>
+                    <span id="cartBadgeCount" class="absolute -top-1 -right-1 bg-jolly-cyan text-jolly-navy text-[10px] font-extrabold rounded-full h-5 w-5 flex items-center justify-center border-2 border-slate-900 shadow">0</span>
+                </button>
+
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-slate-300 hover:text-white focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Search Bar -->
+        <div class="md:hidden px-4 pb-3">
+            <div class="relative">
+                <input type="text" id="mobileSearchInput" onkeyup="handleSearch(this.value)" placeholder="Search phones, TVs, laptops in Kyotera..." 
+                       class="w-full bg-slate-800 border border-slate-700 text-xs rounded-full py-2 pl-9 pr-4 text-white focus:outline-none focus:border-jolly-cyan">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-xs"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden transition-opacity">
+        <div class="bg-jolly-darkBlue w-4/5 max-w-xs h-full p-6 flex flex-col justify-between shadow-2xl text-white">
+            <div>
+                <div class="flex justify-between items-center pb-4 border-b border-slate-800">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-bolt text-amber-400"></i>
+                        <span class="font-bold text-sm">Jolly's Tech Kyotera</span>
+                    </div>
+                    <button onclick="toggleMobileMenu()" class="text-slate-400 hover:text-white">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+                <div class="flex flex-col gap-4 mt-6 text-xs font-medium">
+                    <a href="#store" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-800 flex items-center justify-between">
+                        <span><i class="fa-solid fa-store w-6 text-jolly-cyan"></i> Shop Electronics</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i>
+                    </a>
+                    <a href="#advertising" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-800 flex items-center justify-between text-amber-300">
+                        <span><i class="fa-solid fa-rectangle-ad w-6 text-amber-400"></i> Local Business Ads</span>
+                        <span class="bg-amber-400/20 text-amber-300 text-[10px] px-2 py-0.5 rounded-full">Kyotera</span>
+                    </a>
+                    <a href="#repairs" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-800 flex items-center justify-between">
+                        <span><i class="fa-solid fa-wrench w-6 text-jolly-cyan"></i> Phone & TV Repairs</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i>
+                    </a>
+                    <a href="#location" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-800 flex items-center justify-between">
+                        <span><i class="fa-solid fa-map-location-dot w-6 text-jolly-cyan"></i> Find Our Store</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-slate-800">
+                <a href="https://wa.link/v839xq" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 shadow">
+                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Kyotera Store
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-b from-jolly-navy via-slate-900 to-slate-900 py-16 lg:py-20 border-b border-slate-800 overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 bg-jolly-cyan/10 text-jolly-cyan border border-jolly-cyan/20 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">
+                        <i class="fa-solid fa-location-dot text-amber-400"></i> Kyotera Main Electronics Hub
+                    </span>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                        Dealers in Phones, TVs, Laptops & <span class="text-transparent bg-clip-text bg-gradient-to-r from-jolly-cyan via-blue-400 to-amber-300">All Electronics</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Welcome to <strong>Jolly's Tech Accessories and Computer Center</strong> in Kyotera Town. Get high-quality smartphones, smart TVs, sound systems, computer accessories, fast phone repairs, and local business marketing under one roof.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#store" class="w-full sm:w-auto bg-jolly-cyan hover:bg-cyan-400 text-jolly-navy font-bold px-8 py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 text-xs sm:text-sm">
+                            <i class="fa-solid fa-store"></i> Shop Products (UGX)
+                        </a>
+                        <a href="#advertising" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold px-8 py-3.5 rounded-xl transition-all flex items-center justify-center gap-2 text-xs sm:text-sm">
+                            <i class="fa-solid fa-rectangle-ad text-amber-400"></i> Promote Your Business
+                        </a>
+                    </div>
+
+                    <!-- Store Highlights -->
+                    <div class="pt-6 grid grid-cols-3 gap-3 border-t border-slate-800 text-slate-400 text-xs">
+                        <div>
+                            <p class="font-bold text-white text-sm">100% Genuine</p>
+                            <span>Phone & TV Warranty</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white text-sm">Kyotera Express</p>
+                            <span>Same-Day Pickup</span>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white text-sm">Mobile Money</p>
+                            <span>MTN & Airtel Accepted</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image Grid -->
+                <div class="lg:col-span-5 relative">
+                    <div class="grid grid-cols-2 gap-3 relative z-10">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Smartphones Kyotera" class="rounded-2xl border border-slate-700 h-44 w-full object-cover shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=500&q=80" alt="Smart TVs Kyotera" class="rounded-2xl border border-slate-700 h-44 w-full object-cover shadow-lg mt-4">
+                        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=500&q=80" alt="Laptops Kyotera" class="rounded-2xl border border-slate-700 h-44 w-full object-cover shadow-lg -mt-4">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Audio & Accessories Kyotera" class="rounded-2xl border border-slate-700 h-44 w-full object-cover shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPONSORED LOCAL BUSINESS BANNER -->
+    <section class="bg-gradient-to-r from-amber-500/10 via-slate-800 to-amber-500/10 border-y border-amber-500/20 py-3">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs">
+            <div class="flex items-center gap-3">
+                <span class="bg-amber-400 text-jolly-navy text-[10px] font-extrabold uppercase px-2 py-0.5 rounded">Kyotera Ad Partner</span>
+                <p class="text-slate-200">
+                    📢 <strong class="text-white">Kyotera Hardware & Building Supplies:</strong> Quality cement, iron sheets & electrical fittings at wholesale prices! Call +256 700 112233.
+                </p>
+            </div>
+            <a href="#advertising" class="text-amber-400 font-bold hover:underline whitespace-nowrap text-xs">
+                Advertise your business here <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- E-COMMERCE STORE CATALOG SECTION -->
+    <section id="store" class="py-16 container mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+            <div>
+                <span class="text-jolly-cyan text-xs font-bold tracking-widest uppercase">Electronics Store</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Phones, TVs, Laptops & Accessories</h2>
+                <p class="text-slate-400 text-xs sm:text-sm mt-1">Select from our verified stock in Kyotera Town. Prices listed in UGX.</p>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="categoryFilters">
+                <button onclick="filterCategory('All')" class="cat-btn bg-jolly-cyan text-jolly-navy text-xs font-bold px-4 py-2 rounded-full whitespace-nowrap shadow-sm transition-colors" data-category="All">All Items</button>
+                <button onclick="filterCategory('Phones & Smartwatches')" class="cat-btn bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold px-4 py-2 rounded-full whitespace-nowrap transition-colors" data-category="Phones & Smartwatches">Phones & Smartwatches</button>
+                <button onclick="filterCategory('TVs & Home Audio')" class="cat-btn bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold px-4 py-2 rounded-full whitespace-nowrap transition-colors" data-category="TVs & Home Audio">TVs & Audio</button>
+                <button onclick="filterCategory('Laptops & Computers')" class="cat-btn bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold px-4 py-2 rounded-full whitespace-nowrap transition-colors" data-category="Laptops & Computers">Laptops & PCs</button>
+                <button onclick="filterCategory('Accessories')" class="cat-btn bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold px-4 py-2 rounded-full whitespace-nowrap transition-colors" data-category="Accessories">Accessories</button>
+                <button onclick="filterCategory('General Electronics')" class="cat-btn bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold px-4 py-2 rounded-full whitespace-nowrap transition-colors" data-category="General Electronics">General Electronics</button>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Dynamic JavaScript Rendering -->
+        </div>
+    </section>
+
+    <!-- LOCAL ADVERTISING & BUSINESS PROMOTION HUB -->
+    <section id="advertising" class="bg-gradient-to-b from-slate-900 via-jolly-darkBlue to-slate-900 py-16 border-y border-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="bg-amber-400/10 text-amber-300 border border-amber-400/20 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Kyotera Business Directory</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Promote Your Business With Us</h2>
+                <p class="text-slate-300 text-xs sm:text-sm mt-2">
+                    Grow your sales in Kyotera, Kalisizo, and Masaka! Feature your shop, hotel, school, or service directly on Jolly's Tech website.
+                </p>
+            </div>
+
+            <!-- Ad Pricing Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <!-- Plan 1 -->
+                <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 flex flex-col justify-between hover:border-jolly-cyan transition-all">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Header Banner Ad</span>
+                            <span class="text-amber-400 text-lg font-extrabold">UGX 35,000 / wk</span>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-2">Top Website Notice</h3>
+                        <p class="text-xs text-slate-400 mb-4">Placed at the very top banner seen by all customers opening our website daily.</p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Instant visibility</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Phone / WhatsApp direct click link</li>
+                        </ul>
+                    </div>
+                    <a href="#adForm" class="w-full bg-slate-700 hover:bg-slate-600 text-white font-semibold py-2.5 rounded-xl text-xs text-center transition-colors">Select Header Plan</a>
+                </div>
+
+                <!-- Plan 2 (Popular) -->
+                <div class="bg-slate-800 border-2 border-amber-400 rounded-2xl p-6 flex flex-col justify-between relative shadow-xl scale-105">
+                    <span class="absolute -top-3 right-6 bg-amber-400 text-jolly-navy text-[10px] font-extrabold px-3 py-0.5 rounded-full uppercase">Most Popular in Kyotera</span>
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-300">In-Store Showcase Ad</span>
+                            <span class="text-amber-400 text-xl font-extrabold">UGX 60,000 / wk</span>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-2">Visual Banner Card</h3>
+                        <p class="text-xs text-slate-300 mb-4">Full graphic photo card embedded right between product store listings.</p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Custom business photo display</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> High customer conversion</li>
+                        </ul>
+                    </div>
+                    <a href="#adForm" class="w-full bg-amber-400 hover:bg-amber-500 text-jolly-navy font-bold py-2.5 rounded-xl text-xs text-center transition-colors shadow">Select Card Plan</a>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-6 flex flex-col justify-between hover:border-jolly-cyan transition-all">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Monthly VIP Promotion</span>
+                            <span class="text-amber-400 text-lg font-extrabold">UGX 150,000 / mo</span>
+                        </div>
+                        <h3 class="text-base font-bold text-white mb-2">Full Business Spotlight</h3>
+                        <p class="text-xs text-slate-400 mb-4">Combines all banner positions, social media posts, and status broadcasts in Kyotera.</p>
+                        <ul class="text-xs text-slate-300 space-y-2 mb-6">
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> All ad positions active</li>
+                            <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Full 30 days coverage</li>
+                        </ul>
+                    </div>
+                    <a href="#adForm" class="w-full bg-slate-700 hover:bg-slate-600 text-white font-semibold py-2.5 rounded-xl text-xs text-center transition-colors">Select Monthly VIP</a>
+                </div>
+            </div>
+
+            <!-- Ad Interactive Builder & Submission Form -->
+            <div id="adForm" class="bg-slate-800/90 border border-slate-700 rounded-2xl p-6 md:p-8 max-w-4xl mx-auto shadow-2xl">
+                <h3 class="text-xl font-bold text-white mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-bullhorn text-amber-400"></i> Submit Business Advertisement Request
+                </h3>
+                <p class="text-xs text-slate-300 mb-6">Fill in your business details below to reserve your advertising spot on Jolly's Tech website.</p>
+
+                <form id="adSubmissionForm" onsubmit="handleAdSubmit(event)" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Business Name *</label>
+                            <input type="text" id="adBizName" required oninput="updateAdPreview()" placeholder="e.g. Kyotera Fresh Bakery" class="w-full bg-slate-900 border border-slate-700 rounded-xl py-2.5 px-3 text-xs text-white focus:outline-none focus:border-jolly-cyan">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Phone / WhatsApp Contact *</label>
+                            <input type="text" id="adContact" required placeholder="e.g. +256 745 523253" class="w-full bg-slate-900 border border-slate-700 rounded-xl py-2.5 px-3 text-xs text-white focus:outline-none focus:border-jolly-cyan">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Select Plan</label>
+                            <select id="adTier" class="w-full bg-slate-900 border border-slate-700 rounded-xl py-2.5 px-3 text-xs text-white focus:outline-none focus:border-jolly-cyan">
+                                <option value="Header Banner (UGX 35,000/wk)">Top Header Banner (UGX 35,000 / week)</option>
+                                <option value="In-Store Card (UGX 60,000/wk)" selected>In-Store Visual Card (UGX 60,000 / week)</option>
+                                <option value="Monthly VIP (UGX 150,000/mo)">Monthly VIP Spotlight (UGX 150,000 / month)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Location / Town *</label>
+                            <input type="text" id="adLocation" required placeholder="e.g. Kyotera Town Center" class="w-full bg-slate-900 border border-slate-700 rounded-xl py-2.5 px-3 text-xs text-white focus:outline-none focus:border-jolly-cyan">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Ad Message / Special Offer *</label>
+                        <textarea id="adText" required oninput="updateAdPreview()" rows="2" placeholder="e.g. Get 10% discount on all wedding cakes this month! Visit us next to Stanbic Bank Kyotera." class="w-full bg-slate-900 border border-slate-700 rounded-xl py-2.5 px-3 text-xs text-white focus:outline-none focus:border-jolly-cyan"></textarea>
+                    </div>
+
+                    <!-- Live Ad Banner Preview -->
+                    <div class="p-4 bg-slate-900 rounded-xl border border-dashed border-slate-700">
+                        <span class="text-[10px] font-bold uppercase text-slate-400 block mb-2">Live Ad Preview Banner</span>
+                        <div class="bg-gradient-to-r from-blue-950 to-slate-800 p-3 rounded-lg border border-amber-400/40 flex items-center justify-between gap-2">
+                            <div class="text-xs">
+                                <span class="bg-amber-400 text-jolly-navy font-bold text-[9px] px-1.5 py-0.5 rounded uppercase">Sponsored</span>
+                                <h4 id="prevBiz" class="font-bold text-white text-xs mt-1">Your Business Name</h4>
+                                <p id="prevText" class="text-[11px] text-slate-300">Your advertisement offer text will display here live...</p>
+                            </div>
+                            <button type="button" class="bg-amber-400 text-jolly-navy font-bold text-[10px] px-3 py-1.5 rounded-md whitespace-nowrap">Call Now</button>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <span class="text-xs text-slate-400"><i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> Quick approval & activation within 2 hours.</span>
+                        <button type="submit" class="w-full sm:w-auto bg-amber-400 hover:bg-amber-500 text-jolly-navy font-bold px-8 py-3 rounded-xl text-xs transition-colors flex items-center justify-center gap-2 shadow-lg">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Ad Request via WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- REPAIRS & TECHNICAL SERVICES -->
+    <section id="repairs" class="py-16 bg-slate-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-jolly-cyan text-xs font-bold uppercase tracking-widest">Kyotera Repair Center</span>
+                <h2 class="text-3xl font-extrabold text-white">Fast Repairs & Technical Support</h2>
+                <p class="text-slate-400 text-xs sm:text-sm mt-2">Professional technicians in Kyotera available for instant phone, computer, and TV servicing.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-jolly-cyan transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-jolly-cyan flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2 text-sm">Smartphone Screen & Battery</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">Original screen replacements for iPhone, Samsung, Tecno, Infinix, and battery replacements.</p>
+                    <span class="text-[11px] font-semibold text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-clock"></i> 1 Hour Repair</span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-jolly-cyan transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-tv"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2 text-sm">TV Mounting & Sound Setup</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">Wall mounting for Smart TVs, home theater system installation, and satellite decoder connection.</p>
+                    <span class="text-[11px] font-semibold text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-house"></i> Home Service Available</span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-jolly-cyan transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2 text-sm">Laptop SSD & Windows Setup</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">Speed up your computer with fast SSD storage, genuine Windows activation, and virus cleaning.</p>
+                    <span class="text-[11px] font-semibold text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-bolt"></i> Speed Guarantee</span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-jolly-cyan transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2 text-sm">General Electronics Fix</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-4">Charging port replacement, speaker repairs, Bluetooth audio gear troubleshooting.</p>
+                    <span class="text-[11px] font-semibold text-emerald-400 flex items-center gap-1"><i class="fa-solid fa-shield-check"></i> Tested & Warranted</span>
+                </div>
+            </div>
+
+            <!-- Booking Bar -->
+            <div class="mt-8 bg-gradient-to-r from-jolly-darkBlue to-slate-800 p-6 rounded-2xl border border-slate-700 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                    <h4 class="font-bold text-white text-sm">Have a damaged device in Kyotera?</h4>
+                    <p class="text-xs text-slate-400">Get a free repair price estimate right on WhatsApp.</p>
+                </div>
+                <a href="https://wa.link/v839xq?text=Hello%20Jolly's%20Tech,%20I%20need%20a%20repair%20quote" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-6 py-3 rounded-xl transition-colors whitespace-nowrap flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i> Book Repair via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US & STORE LOCATION MAP IN KYOTERA -->
+    <section id="about" class="py-16 bg-slate-950 border-t border-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <!-- Text info -->
+                <div class="space-y-4">
+                    <span class="text-jolly-cyan text-xs font-bold uppercase tracking-widest">About Jolly's Tech</span>
+                    <h2 class="text-3xl font-extrabold text-white leading-tight">Kyotera's Trusted Electronics & Computer Accessories Hub</h2>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Located right in the heart of Kyotera Town, <strong>Jolly's Tech Accessories and Computer Center</strong> has earned the trust of hundreds of local residents, business owners, schools, and organizations.
+                    </p>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        We specialize in genuine smartphone sales, high-definition Smart TVs, laptops, durable chargers, memory storage, and high-performance audio equipment. Every product sold comes with guaranteed warranty and after-sales support.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                            <h4 class="text-xl font-extrabold text-jolly-cyan">Kyotera Town</h4>
+                            <p class="text-xs text-slate-400">Physical walk-in showroom</p>
+                        </div>
+                        <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+                            <h4 class="text-xl font-extrabold text-amber-400">Same-Day</h4>
+                            <p class="text-xs text-slate-400">Delivery in Kyotera & Kalisizo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Map Card -->
+                <div id="location" class="bg-slate-900 p-6 rounded-2xl border border-slate-800 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-jolly-cyan/10 text-jolly-cyan flex items-center justify-center font-bold text-lg">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-sm">Store Address in Kyotera</h3>
+                            <p class="text-xs text-slate-400">Main Street, Opposite Kyotera Central Market, Uganda</p>
+                        </div>
+                    </div>
+
+                    <!-- Map graphic card -->
+                    <div class="relative h-56 rounded-xl overflow-hidden border border-slate-700 bg-slate-800 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover opacity-50">
+                        <div class="absolute inset-0 bg-slate-900/60 flex flex-col items-center justify-center text-center p-4">
+                            <i class="fa-solid fa-location-dot text-3xl text-amber-400 mb-2 animate-bounce"></i>
+                            <p class="font-bold text-white text-sm">Jolly's Tech Center - Kyotera Branch</p>
+                            <p class="text-[11px] text-slate-300 max-w-xs mt-1">Open Monday - Saturday: 8:00 AM to 8:00 PM</p>
+                            <a href="https://maps.google.com/?q=Kyotera+Uganda" target="_blank" class="mt-3 bg-jolly-cyan hover:bg-cyan-400 text-jolly-navy font-bold text-xs px-4 py-2 rounded-lg">
+                                Open Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Testimonials in Kyotera -->
+            <div class="pt-8 border-t border-slate-800">
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-bold text-white">Client Reviews in Kyotera</h3>
+                    <p class="text-slate-400 text-xs">What our local customers say about Jolly's Tech</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 space-y-2">
+                        <div class="text-amber-400 text-xs flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-300 italic">"I bought a 43-inch Smart TV from Jolly's Tech. They delivered it to Kalisizo and mounted it on my wall perfectly. Highly recommend!"</p>
+                        <span class="text-xs font-bold text-jolly-cyan block">- Kintu Peterson, Najja</span>
+                    </div>
+
+                    <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 space-y-2">
+                        <div class="text-amber-400 text-xs flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-300 italic">"Replaced my laptop battery and upgraded to SSD. My computer now turns on in just 5 seconds! Excellent service."</p>
+                        <span class="text-xs font-bold text-jolly-cyan block">- Ariela Abigail, Najja</span>
+                    </div>
+
+                    <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 space-y-2">
+                        <div class="text-amber-400 text-xs flex gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs text-slate-300 italic">"I place my pharmacy advertisement banner on their site. It brings me customers from all around Kyotera town."</p>
+                        <span class="text-xs font-bold text-jolly-cyan block">- Dr. Fred, Kyotera</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOPPING CART SLIDE-OVER DRAWER -->
+    <div id="cartDrawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-black/70 backdrop-blur-sm transition-opacity" onclick="toggleCartDrawer()"></div>
+        <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-slate-900 border-l border-slate-800 shadow-2xl flex flex-col justify-between text-white">
+                <!-- Cart Header -->
+                <div class="p-6 bg-jolly-darkBlue border-b border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-cart-shopping text-jolly-cyan text-lg"></i>
+                        <h3 class="font-bold text-base">Your Cart (UGX)</h3>
+                    </div>
+                    <button onclick="toggleCartDrawer()" class="text-slate-400 hover:text-white">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Cart Items Container -->
+                <div id="cartItemsContainer" class="p-6 flex-1 overflow-y-auto space-y-4">
+                    <!-- Rendered dynamically -->
+                </div>
+
+                <!-- Cart Summary Footer -->
+                <div class="p-6 bg-slate-950 border-t border-slate-800 space-y-4">
+                    <!-- Promo Code Input -->
+                    <div class="flex gap-2">
+                        <input type="text" id="promoCodeInput" placeholder="Promo Code (e.g. KYOTERA10)" class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white uppercase focus:outline-none focus:border-jolly-cyan">
+                        <button onclick="applyPromo()" class="bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold px-4 py-2 rounded-xl border border-slate-700">Apply</button>
+                    </div>
+
+                    <div class="space-y-1.5 text-xs text-slate-300">
+                        <div class="flex justify-between">
+                            <span>Subtotal</span>
+                            <span id="cartSubtotal">UGX 0</span>
+                        </div>
+                        <div class="flex justify-between text-emerald-400">
+                            <span>Discount</span>
+                            <span id="cartDiscount">-UGX 0</span>
+                        </div>
+                        <div class="flex justify-between text-base font-extrabold text-white pt-2 border-t border-slate-800">
+                            <span>Total</span>
+                            <span id="cartTotal" class="text-jolly-cyan">UGX 0</span>
+                        </div>
+                    </div>
+
+                    <button onclick="openCheckoutModal()" class="w-full bg-jolly-cyan hover:bg-cyan-400 text-jolly-navy font-bold py-3.5 rounded-xl text-xs shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-lock"></i> Checkout Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL (WhatsApp, Mobile Money, Cash on Pickup in Kyotera) -->
+    <div id="checkoutModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden p-4">
+        <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-lg w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto text-white">
+            <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <h3 class="text-xl font-bold text-white mb-1 flex items-center gap-2">
+                <i class="fa-solid fa-truck-fast text-jolly-cyan"></i> Complete Your Order
+            </h3>
+            <p class="text-xs text-slate-400 mb-6">Choose how you want to receive and pay for your order in Kyotera.</p>
+
+            <form id="checkoutForm" onsubmit="handleCheckoutSubmit(event)" class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-semibold text-slate-300 mb-1">Your Full Name *</label>
+                    <input type="text" id="custName" required placeholder="e.g. Mukasa Ronald" class="w-full bg-slate-800 border border-slate-700 rounded-xl py-2.5 px-3 text-white focus:border-jolly-cyan focus:outline-none">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-semibold text-slate-300 mb-1">Phone Number (MTN/Airtel) *</label>
+                        <input type="tel" id="custPhone" required placeholder="+256 745 523253" class="w-full bg-slate-800 border border-slate-700 rounded-xl py-2.5 px-3 text-white focus:border-jolly-cyan focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-300 mb-1">Town / Location in Kyotera *</label>
+                        <input type="text" id="custAddress" required placeholder="e.g. Kyotera Town, near Taxi Park" class="w-full bg-slate-800 border border-slate-700 rounded-xl py-2.5 px-3 text-white focus:border-jolly-cyan focus:outline-none">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block font-semibold text-slate-300 mb-2">Payment / Delivery Option</label>
+                    <div class="grid grid-cols-3 gap-3">
+                        <label class="border border-slate-700 rounded-xl p-3 flex flex-col items-center justify-center gap-1 cursor-pointer hover:border-jolly-cyan text-center bg-slate-800">
+                            <input type="radio" name="payMethod" value="WhatsApp Order" checked class="accent-jolly-cyan">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i>
+                            <span class="font-semibold text-[10px]">WhatsApp Order</span>
+                        </label>
+                        <label class="border border-slate-700 rounded-xl p-3 flex flex-col items-center justify-center gap-1 cursor-pointer hover:border-jolly-cyan text-center bg-slate-800">
+                            <input type="radio" name="payMethod" value="MTN / Airtel Mobile Money" class="accent-jolly-cyan">
+                            <i class="fa-solid fa-mobile-screen-button text-amber-400 text-base"></i>
+                            <span class="font-semibold text-[10px]">Mobile Money</span>
+                        </label>
+                        <label class="border border-slate-700 rounded-xl p-3 flex flex-col items-center justify-center gap-1 cursor-pointer hover:border-jolly-cyan text-center bg-slate-800">
+                            <input type="radio" name="payMethod" value="Pay on Store Collection" class="accent-jolly-cyan">
+                            <i class="fa-solid fa-store text-jolly-cyan text-base"></i>
+                            <span class="font-semibold text-[10px]">Pay at Store</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 space-y-1">
+                    <div class="flex justify-between text-slate-300 font-semibold">
+                        <span>Total Payable Amount:</span>
+                        <span id="checkoutTotalAmount" class="text-jolly-cyan font-bold">UGX 400000</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-jolly-cyan hover:bg-cyan-400 text-jolly-navy font-bold py-3.5 rounded-xl text-xs transition-colors shadow-lg">
+                    Confirm & Submit Order
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- QUICK VIEW MODAL -->
+    <div id="quickViewModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden p-4">
+        <div class="bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto text-white" id="quickViewContent">
+            <!-- Rendered by JS -->
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 bg-slate-800 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-jolly-cyan/40 transform translate-y-20 opacity-0 transition-all duration-300">
+        <i id="toastIcon" class="fa-solid fa-circle-check text-jolly-cyan"></i>
+        <span id="toastMsg" class="text-xs font-semibold">Action completed successfully!</span>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-jolly-navy text-slate-400 pt-16 pb-8 border-t border-slate-800">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <!-- Col 1 -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-jolly-cyan flex items-center justify-center text-jolly-navy font-extrabold text-lg">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <span class="text-base font-bold text-white">Jolly's Tech Kyotera</span>
+                </div>
+                <p class="text-xs leading-relaxed text-slate-400">
+                    Kyotera's premier center for smartphones, smart TVs, laptops, computer accessories, repairs, and local business marketing.
+                </p>
+            </div>
+
+            <!-- Col 2 -->
+            <div>
+                <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Quick Navigation</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#store" class="hover:text-jolly-cyan">Shop Electronics</a></li>
+                    <li><a href="#advertising" class="hover:text-amber-400">Advertise Your Business</a></li>
+                    <li><a href="#repairs" class="hover:text-jolly-cyan">Phone & TV Repairs</a></li>
+                    <li><a href="#location" class="hover:text-jolly-cyan">Store Map Location</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3 -->
+            <div>
+                <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Contact Kyotera Store</h4>
+                <ul class="space-y-2 text-xs text-slate-400">
+                    <li><i class="fa-solid fa-location-dot text-jolly-cyan mr-2"></i> Kyotera Main Street, Uganda</li>
+                    <li><i class="fa-solid fa-phone text-jolly-cyan mr-2"></i> +256 745 523253 / +256 756 86815</li>
+                    <li><i class="fa-solid fa-envelope text-jolly-cyan mr-2"></i> info@jollybanabas6@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Col 4 -->
+            <div>
+                <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">Business Hours</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Monday - Saturday: 8:00 AM - 8:00 PM<br>
+                    Sundays: Closed for worship & rest
+                </p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 pt-6 border-t border-slate-800 text-center text-[11px] text-slate-500">
+            <p>© 2026 Jolly's Tech Accessories and Computer Center. Kyotera, Uganda. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.link/v839xq?text=Hello%20Jolly's%20Tech%20Kyotera,%20I'm%20inquiring%20about%20your%20products" target="_blank" class="fixed bottom-6 left-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Inventory Data in Ugandan Shillings (UGX)
+        const products = [
+            {
+                id: 1,
+                name: "Samsung Galaxy A15 (128GB, 4GB RAM, 5G)",
+                category: "Phones & Smartwatches",
+                price: 580000,
+                rating: 4.9,
+                reviews: 32,
+                tag: "Bestseller",
+                image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80",
+                description: "Brand new Samsung smartphone with crisp Super AMOLED screen, 50MP camera, and 5000mAh long battery life."
+            },
+            {
+                id: 2,
+                name: "Hisense 43-Inch Frameless Full HD Smart Android TV",
+                category: "TVs & Home Audio",
+                price: 1150000,
+                rating: 4.9,
+                reviews: 21,
+                tag: "Top Rated",
+                image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=600&q=80",
+                description: "Smart TV with Netflix, YouTube, Wi-Fi connectivity, HDMI, and USB ports. Comes with 1-year warranty in Kyotera."
+            },
+            {
+                id: 3,
+                name: "HP EliteBook 840 G5 Laptop (Core i5, 16GB RAM, 256GB SSD)",
+                category: "Laptops & Computers",
+                price: 1450000,
+                rating: 4.8,
+                reviews: 18,
+                tag: "In Stock",
+                image: "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80",
+                description: "Super fast aluminum laptop suitable for office work, school, graphic design, and software navigation."
+            },
+            {
+                id: 4,
+                name: "Wireless Bluetooth Heavy Bass Overhead Headphones",
+                category: "Accessories",
+                price: 75000,
+                rating: 4.7,
+                reviews: 44,
+                tag: "Popular",
+                image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+                description: "Long battery life Bluetooth headset with active noise isolation and built-in handsfree mic."
+            },
+            {
+                id: 5,
+                name: "Tecno Spark 20 Pro (256GB, 8GB RAM)",
+                category: "Phones & Smartwatches",
+                price: 640000,
+                rating: 4.8,
+                reviews: 29,
+                tag: "New Arrival",
+                image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80",
+                description: "High speed camera smartphone with 108MP camera, fast charging, and smooth gaming refresh rate."
+            },
+            {
+                id: 6,
+                name: "Smart Watch Series 8 (Heart Rate, Calls & Sport Tracking)",
+                category: "Phones & Smartwatches",
+                price: 120000,
+                rating: 4.6,
+                reviews: 50,
+                tag: "Hot Item",
+                image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
+                description: "Connects to all Android & iPhones. Receive WhatsApp messages, measure heart rate, and answer phone calls."
+            },
+            {
+                id: 7,
+                name: "Super Heavy Bass Subwoofer Sound System 2.1",
+                category: "TVs & Home Audio",
+                price: 280000,
+                rating: 4.9,
+                reviews: 35,
+                tag: "Featured",
+                image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80",
+                description: "Powerful home audio speaker system with Bluetooth, FM radio, USB reader, and remote control."
+            },
+            {
+                id: 8,
+                name: "20,000mAh Fast Charging Digital Power Bank",
+                category: "Accessories",
+                price: 85000,
+                rating: 4.9,
+                reviews: 62,
+                tag: "Essential",
+                image: "https://images.unsplash.com/photo-1609592424009-598d94a946b5?auto=format&fit=crop&w=600&q=80",
+                description: "Charges smartphones 4 to 5 times. Includes LED battery percentage indicator display."
+            },
+            {
+                id: 9,
+                name: "Solar Energy System Inverter & Battery Unit",
+                category: "General Electronics",
+                price: 890000,
+                rating: 5.0,
+                reviews: 15,
+                tag: "Kyotera Solar",
+                image: "https://images.unsplash.com/photo-1509391365360-2e959784a276?auto=format&fit=crop&w=600&q=80",
+                description: "Reliable solar power system to power lights, TVs, computers, and phone charging during power outages."
+            }
+        ];
+
+        // Global State
+        let cart = [];
+        let currentDiscountRate = 0;
+
+        // On Load Initializer
+        document.addEventListener("DOMContentLoaded", () => {
+            renderProducts(products);
+            updateCartUI();
+        });
+
+        // Helper: Format UGX
+        function formatUGX(amount) {
+            return "UGX " + amount.toLocaleString('en-US');
+        }
+
+        // Render Product Cards
+        function renderProducts(items) {
+            const grid = document.getElementById("productsGrid");
+            grid.innerHTML = "";
+
+            if (items.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full py-12 text-center text-slate-400">
+                        <i class="fa-solid fa-box-open text-4xl mb-3"></i>
+                        <p class="text-sm font-semibold">No electronics found matching your search.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            items.forEach(product => {
+                const card = document.createElement("div");
+                card.className = "bg-slate-800/80 border border-slate-700 rounded-2xl overflow-hidden hover:border-jolly-cyan transition-all duration-300 flex flex-col justify-between group";
+                card.innerHTML = `
+                    <div class="relative overflow-hidden bg-slate-900">
+                        <span class="absolute top-3 left-3 z-10 bg-jolly-navy/90 text-jolly-cyan text-[10px] font-bold px-2.5 py-1 rounded-full uppercase border border-jolly-cyan/30">${product.tag}</span>
+                        <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                        <button onclick="openQuickView(${product.id})" class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-xs font-semibold gap-1">
+                            <i class="fa-solid fa-eye"></i> Quick View
+                        </button>
+                    </div>
+
+                    <div class="p-4 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase text-amber-400 tracking-wider">${product.category}</span>
+                            <h3 class="font-bold text-white text-xs mt-1 line-clamp-2 hover:text-jolly-cyan transition-colors cursor-pointer" onclick="openQuickView(${product.id})">${product.name}</h3>
+                            <div class="flex items-center gap-1.5 mt-2 text-xs text-amber-400">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="font-bold text-white text-xs">${product.rating}</span>
+                                <span class="text-slate-400 text-[10px]">(${product.reviews})</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 pt-3 border-t border-slate-700/80 flex items-center justify-between">
+                            <div>
+                                <span class="text-slate-400 text-[10px] block">Price</span>
+                                <span class="text-sm font-extrabold text-jolly-cyan">${formatUGX(product.price)}</span>
+                            </div>
+                            <button onclick="addToCart(${product.id})" class="bg-jolly-cyan hover:bg-cyan-400 text-jolly-navy text-xs font-bold px-3 py-2 rounded-xl transition-colors flex items-center gap-1">
+                                <i class="fa-solid fa-cart-plus"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Category Filter
+        function filterCategory(category) {
+            document.querySelectorAll(".cat-btn").forEach(btn => {
+                if (btn.dataset.category === category) {
+                    btn.className = "cat-btn bg-jolly-cyan text-jolly-navy text-xs font-bold px-4 py-2 rounded-full whitespace-nowrap shadow-sm transition-colors";
+                } else {
+                    btn.className = "cat-btn bg-slate-800 border border-slate-700 text-slate-300 text-xs font-semibold px-4 py-2 rounded-full whitespace-nowrap transition-colors";
+                }
+            });
+
+            if (category === 'All') {
+                renderProducts(products);
+            } else {
+                renderProducts(products.filter(p => p.category === category));
+            }
+        }
+
+        // Search Filter
+        function handleSearch(query) {
+            const q = query.toLowerCase().trim();
+            const filtered = products.filter(p => 
+                p.name.toLowerCase().includes(q) || 
+                p.category.toLowerCase().includes(q) ||
+                p.description.toLowerCase().includes(q)
+            );
+            renderProducts(filtered);
+        }
+
+        // Add to Cart
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            const existing = cart.find(item => item.id === productId);
+
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+
+            updateCartUI();
+            showToast(`Added to cart: ${product.name.slice(0, 18)}...`);
+        }
+
+        // Update Cart UI
+        function updateCartUI() {
+            const container = document.getElementById("cartItemsContainer");
+            const badge = document.getElementById("cartBadgeCount");
+            const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+
+            badge.innerText = totalItems;
+
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="py-16 text-center text-slate-400">
+                        <i class="fa-solid fa-cart-flatbed text-4xl mb-3"></i>
+                        <p class="text-xs font-medium">Your cart is empty.</p>
+                        <a href="#store" onclick="toggleCartDrawer()" class="inline-block mt-3 text-xs font-bold text-jolly-cyan hover:underline">Explore Electronics</a>
+                    </div>
+                `;
+            } else {
+                container.innerHTML = "";
+                cart.forEach(item => {
+                    const el = document.createElement("div");
+                    el.className = "flex items-center gap-3 p-3 bg-slate-800 rounded-xl border border-slate-700";
+                    el.innerHTML = `
+                        <img src="${item.image}" class="w-12 h-12 object-cover rounded-lg">
+                        <div class="flex-1">
+                            <h4 class="text-xs font-bold text-white line-clamp-1">${item.name}</h4>
+                            <span class="text-xs font-semibold text-jolly-cyan">${formatUGX(item.price * item.quantity)}</span>
+                            <div class="flex items-center gap-2 mt-1">
+                                <button onclick="changeQty(${item.id}, -1)" class="w-5 h-5 bg-slate-700 border rounded text-xs flex items-center justify-center font-bold">-</button>
+                                <span class="text-xs font-bold">${item.quantity}</span>
+                                <button onclick="changeQty(${item.id}, 1)" class="w-5 h-5 bg-slate-700 border rounded text-xs flex items-center justify-center font-bold">+</button>
+                            </div>
+                        </div>
+                        <button onclick="removeFromCart(${item.id})" class="text-slate-400 hover:text-red-400 text-sm">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    `;
+                    container.appendChild(el);
+                });
+            }
+
+            const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+            const discountAmt = subtotal * currentDiscountRate;
+            const finalTotal = subtotal - discountAmt;
+
+            document.getElementById("cartSubtotal").innerText = formatUGX(subtotal);
+            document.getElementById("cartDiscount").innerText = "-" + formatUGX(discountAmt);
+            document.getElementById("cartTotal").innerText = formatUGX(finalTotal);
+            document.getElementById("checkoutTotalAmount").innerText = formatUGX(finalTotal);
+        }
+
+        function changeQty(id, delta) {
+            const item = cart.find(i => i.id === id);
+            if (!item) return;
+
+            item.quantity += delta;
+            if (item.quantity <= 0) {
+                cart = cart.filter(i => i.id !== id);
+            }
+            updateCartUI();
+        }
+
+        function removeFromCart(id) {
+            cart = cart.filter(i => i.id !== id);
+            updateCartUI();
+            showToast("Item removed from cart");
+        }
+
+        function applyPromo() {
+            const code = document.getElementById("promoCodeInput").value.trim().toUpperCase();
+            if (code === 'KYOTERA10') {
+                currentDiscountRate = 0.10;
+                showToast("10% Kyotera Promo Applied!");
+            } else {
+                showToast("Invalid code. Use KYOTERA10", "error");
+            }
+            updateCartUI();
+        }
+
+        function toggleCartDrawer() {
+            document.getElementById("cartDrawer").classList.toggle("hidden");
+        }
+
+        function toggleMobileMenu() {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        }
+
+        // Live Banner Preview Builder
+        function updateAdPreview() {
+            const name = document.getElementById("adBizName").value.trim() || "Your Business Name";
+            const text = document.getElementById("adText").value.trim() || "Your advertisement offer text will display here live...";
+            
+            document.getElementById("prevBiz").innerText = name;
+            document.getElementById("prevText").innerText = text;
+        }
+
+        function openQuickView(id) {
+            const product = products.find(p => p.id === id);
+            const modal = document.getElementById("quickViewModal");
+            const content = document.getElementById("quickViewContent");
+
+            content.innerHTML = `
+                <button onclick="closeQuickView()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                    <img src="${product.image}" class="w-full h-60 object-cover rounded-2xl border border-slate-700">
+                    <div class="space-y-4">
+                        <span class="bg-amber-400/20 text-amber-300 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase">${product.category}</span>
+                        <h3 class="text-lg font-bold text-white">${product.name}</h3>
+                        <p class="text-xs text-slate-300 leading-relaxed">${product.description}</p>
+                        <div class="text-xl font-extrabold text-jolly-cyan">${formatUGX(product.price)}</div>
+                        <div class="pt-2 flex gap-3">
+                            <button onclick="addToCart(${product.id}); closeQuickView();" class="flex-1 bg-jolly-cyan hover:bg-cyan-400 text-jolly-navy font-bold py-3 rounded-xl text-xs transition-colors">
+                                Add To Cart
+                            </button>
+                            <a href="https://wa.link/v839xq?text=I'm%20interested%20in%20${encodeURIComponent(product.name)}" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-3 rounded-xl text-xs flex items-center justify-center">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            modal.classList.remove("hidden");
+        }
+
+        function closeQuickView() {
+            document.getElementById("quickViewModal").classList.add("hidden");
+        }
+
+        function openCheckoutModal() {
+            if (cart.length === 0) {
+                showToast("Your cart is empty!", "error");
+                return;
+            }
+            toggleCartDrawer();
+            document.getElementById("checkoutModal").classList.remove("hidden");
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById("checkoutModal").classList.add("hidden");
+        }
+
+        function handleCheckoutSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById("custName").value;
+            const phone = document.getElementById("custPhone").value;
+            const address = document.getElementById("custAddress").value;
+            const payMethod = document.querySelector('input[name="payMethod"]:checked').value;
+
+            closeCheckoutModal();
+
+            let summary = `*NEW ORDER - JOLLY'S TECH KYOTERA*\n`;
+            summary += `Customer: ${name}\nPhone: ${phone}\nLocation: ${address}\nPayment Option: ${payMethod}\n\n*Ordered Electronics:*\n`;
+            cart.forEach(i => {
+                summary += `- ${i.name} x${i.quantity} (${formatUGX(i.price * i.quantity)})\n`;
+            });
+            summary += `\n*Total Payable:* ${document.getElementById("cartTotal").innerText}`;
+
+            showToast("Opening WhatsApp to place your order...");
+            setTimeout(() => {
+                window.open(`https://wa.link/v839xq?text=${encodeURIComponent(summary)}`, '_blank');
+                cart = [];
+                updateCartUI();
+            }, 1000);
+        }
+
+        function handleAdSubmit(e) {
+            e.preventDefault();
+            const biz = document.getElementById("adBizName").value;
+            const contact = document.getElementById("adContact").value;
+            const tier = document.getElementById("adTier").value;
+            const loc = document.getElementById("adLocation").value;
+            const text = document.getElementById("adText").value;
+
+            const msg = `*NEW BUSINESS AD REQUEST (KYOTERA)*\nBusiness: ${biz}\nContact: ${contact}\nLocation: ${loc}\nAd Tier: ${tier}\nTagline: ${text}`;
+            
+            showToast("Opening WhatsApp for Ad Approval...");
+            setTimeout(() => {
+                window.open(`https://wa.link/v839xq?text=${encodeURIComponent(msg)}`, '_blank');
+                document.getElementById("adSubmissionForm").reset();
+            }, 1000);
+        }
+
+        function showToast(msg, type = "success") {
+            const toast = document.getElementById("toast");
+            const toastMsg = document.getElementById("toastMsg");
+            const toastIcon = document.getElementById("toastIcon");
+
+            toastMsg.innerText = msg;
+            if (type === "error") {
+                toastIcon.className = "fa-solid fa-circle-exclamation text-red-400";
+            } else {
+                toastIcon.className = "fa-solid fa-circle-check text-jolly-cyan";
+            }
+
+            toast.classList.remove("translate-y-20", "opacity-0");
+            toast.classList.add("translate-y-0", "opacity-100");
+
+            setTimeout(() => {
+                toast.classList.remove("translate-y-0", "opacity-100");
+                toast.classList.add("translate-y-20", "opacity-0");
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
